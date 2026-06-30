@@ -68,3 +68,6 @@ two-tower-recsys/
 | 6 | Online Learning Loop | Incremental SGD updates, embedding snapshot versioning | Pending |
 | 7 | Dashboard | Next.js dashboard: latency, score distribution, embedding evolution | Pending |
 | 8 | Integration & End-to-End Test | Full pipeline test, load testing, final docs and polish | Pending |
+
+
+thats all!!
