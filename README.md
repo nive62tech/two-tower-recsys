@@ -1,4 +1,4 @@
-# Two-Tower Retrieval + Real-Time Reranking System with Feedback Loops
+﻿# Two-Tower Retrieval + Real-Time Reranking System with Feedback Loops
 
 A production-style recommendation system built the way YouTube, TikTok, and
 Spotify actually do it: a two-tower neural network learns user and item
@@ -17,14 +17,14 @@ portfolio projects stop at "train a model, report accuracy." This project
 goes further by implementing the full production loop:
 
 - **Two-stage retrieval**: ANN candidate generation followed by precise
-  cross-encoder reranking — the same pattern used to serve recommendations
+  cross-encoder reranking â€” the same pattern used to serve recommendations
   over catalogs with millions of items in milliseconds.
 - **Real-time feedback ingestion**: a Kafka-based event stream captures live
   user interactions instead of relying on static offline datasets.
 - **Online learning**: embeddings update incrementally from the live stream,
   not just from periodic offline retraining.
 - **Observability**: a dashboard exposes system internals (latency, score
-  distributions, embedding drift) that are normally invisible — exactly what
+  distributions, embedding drift) that are normally invisible â€” exactly what
   separates a research notebook from a production system.
 
 ## Tech Stack
@@ -46,13 +46,13 @@ on Google Colab GPU, exported via TorchScript/ONNX
 
 \`\`\`
 two-tower-recsys/
-├── data/                # synthetic data generation + processed splits
-├── model/                # two-tower model, reranker, online learning, Colab notebook
-├── backend/              # FastAPI app: retrieval, rerank, feedback, metrics APIs
-├── streaming/            # Kafka consumer + online training worker
-├── frontend/              # Next.js dashboard
-├── scripts/               # local orchestration helpers
-└── docs/                  # phase READMEs, architecture diagram
+â”œâ”€â”€ data/                # synthetic data generation + processed splits
+â”œâ”€â”€ model/                # two-tower model, reranker, online learning, Colab notebook
+â”œâ”€â”€ backend/              # FastAPI app: retrieval, rerank, feedback, metrics APIs
+â”œâ”€â”€ streaming/            # Kafka consumer + online training worker
+â”œâ”€â”€ frontend/              # Next.js dashboard
+â”œâ”€â”€ scripts/               # local orchestration helpers
+â””â”€â”€ docs/                  # phase READMEs, architecture diagram
 \`\`\`
 
 ## Phase Progress
@@ -61,7 +61,7 @@ two-tower-recsys/
 |-------|------|--------|--------|
 | 0 | Repo Setup & Environment | Git init, folder structure, Python/Node env setup | Complete |
 | 1 | Synthetic Data Pipeline | Synthetic users/items/interactions, train/val/test splits | Complete |
-| 2 | Two-Tower Model Training | UserTower/ItemTower architecture, training on Colab, export | Pending |
+| 2 | Two-Tower Model Training | UserTower/ItemTower architecture, training on Colab, export | Complete |
 | 3 | ANN Retrieval Service | FAISS index build, FastAPI retrieve endpoint, latency logging | Pending |
 | 4 | Cross-Encoder Reranker | sentence-transformers reranker, FastAPI rerank endpoint | Pending |
 | 5 | Real-Time Feedback Stream | Kafka native install, feedback endpoint, consumer service | Pending |
