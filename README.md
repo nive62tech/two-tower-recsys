@@ -62,7 +62,7 @@ two-tower-recsys/
 | 0 | Repo Setup & Environment | Git init, folder structure, Python/Node env setup | Complete |
 | 1 | Synthetic Data Pipeline | Synthetic users/items/interactions, train/val/test splits | Complete |
 | 2 | Two-Tower Model Training | UserTower/ItemTower architecture, training on Colab, export | Complete |
-| 3 | ANN Retrieval Service | FAISS index build, FastAPI retrieve endpoint, latency logging | Pending |
+| 3 | ANN Retrieval Service | FAISS index build, FastAPI retrieve endpoint, latency logging | Complete |
 | 4 | Cross-Encoder Reranker | sentence-transformers reranker, FastAPI rerank endpoint | Pending |
 | 5 | Real-Time Feedback Stream | Kafka native install, feedback endpoint, consumer service | Pending |
 | 6 | Online Learning Loop | Incremental SGD updates, embedding snapshot versioning | Pending |
