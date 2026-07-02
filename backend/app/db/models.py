@@ -29,3 +29,15 @@ class RerankLog(Base):
     mean_score = Column(Float)
     latency_ms = Column(Float)
     created_at = Column(DateTime, default=datetime.utcnow)
+
+
+class FeedbackEvent(Base):
+    __tablename__ = "feedback_events"
+
+    id = Column(Integer, primary_key=True, index=True)
+    user_id = Column(Integer, index=True)
+    item_id = Column(Integer, index=True)
+    event_type = Column(String)
+    dwell_seconds = Column(Float, nullable=True)
+    label = Column(Integer)
+    created_at = Column(DateTime, default=datetime.utcnow)

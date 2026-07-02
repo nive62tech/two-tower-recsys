@@ -36,3 +36,18 @@ class RerankResponse(BaseModel):
     query: str
     results: List[RerankResult]
     latency_ms: float
+
+
+class FeedbackRequest(BaseModel):
+    user_id: int
+    item_id: int
+    event_type: str
+    dwell_seconds: Optional[float] = None
+    label: int
+
+
+class FeedbackResponse(BaseModel):
+    status: str
+    user_id: int
+    item_id: int
+    event_type: str
