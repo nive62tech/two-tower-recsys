@@ -1,5 +1,5 @@
 ﻿from pydantic import BaseModel
-from typing import List
+from typing import List, Optional
 
 
 class RetrieveRequest(BaseModel):
@@ -11,4 +11,28 @@ class RetrieveResponse(BaseModel):
     user_id: int
     item_ids: List[int]
     scores: List[float]
+    latency_ms: float
+
+
+class RerankItem(BaseModel):
+    item_id: int
+    description: str
+
+
+class RerankRequest(BaseModel):
+    user_id: int
+    query: str
+    candidates: List[RerankItem]
+
+
+class RerankResult(BaseModel):
+    item_id: int
+    description: str
+    rerank_score: float
+
+
+class RerankResponse(BaseModel):
+    user_id: int
+    query: str
+    results: List[RerankResult]
     latency_ms: float

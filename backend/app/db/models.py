@@ -11,5 +11,21 @@ class RetrievalLog(Base):
     user_id = Column(Integer, index=True)
     top_k = Column(Integer)
     latency_ms = Column(Float)
-    retrieved_item_ids = Column(String)  # comma-separated
+    retrieved_item_ids = Column(String)
+    created_at = Column(DateTime, default=datetime.utcnow)
+
+
+class RerankLog(Base):
+    __tablename__ = "rerank_logs"
+
+    id = Column(Integer, primary_key=True, index=True)
+    user_id = Column(Integer, index=True)
+    query = Column(String)
+    num_candidates = Column(Integer)
+    top_item_id = Column(Integer)
+    top_score = Column(Float)
+    min_score = Column(Float)
+    max_score = Column(Float)
+    mean_score = Column(Float)
+    latency_ms = Column(Float)
     created_at = Column(DateTime, default=datetime.utcnow)

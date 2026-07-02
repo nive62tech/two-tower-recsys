@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from backend.app.db.session import engine, Base
 from backend.app.db import models
-from backend.app.api import retrieval
+from backend.app.api import retrieval, rerank
 
 Base.metadata.create_all(bind=engine)
 
@@ -18,11 +18,12 @@ app.add_middleware(
 )
 
 app.include_router(retrieval.router, prefix="/api", tags=["retrieval"])
+app.include_router(rerank.router, prefix="/api", tags=["rerank"])
 
 
 @app.get("/")
 def read_root():
-    return {"status": "ok", "service": "two-tower-recsys-backend", "phase": "3"}
+    return {"status": "ok", "service": "two-tower-recsys-backend", "phase": "4"}
 
 
 @app.get("/health")
