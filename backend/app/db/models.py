@@ -41,3 +41,14 @@ class FeedbackEvent(Base):
     dwell_seconds = Column(Float, nullable=True)
     label = Column(Integer)
     created_at = Column(DateTime, default=datetime.utcnow)
+
+
+class EmbeddingSnapshot(Base):
+    __tablename__ = "embedding_snapshots"
+
+    id = Column(Integer, primary_key=True, index=True)
+    timestamp = Column(String)
+    snapshot_file = Column(String)
+    num_items = Column(Integer)
+    embedding_dim = Column(Integer)
+    created_at = Column(DateTime, default=datetime.utcnow)
