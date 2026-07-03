@@ -65,7 +65,7 @@ two-tower-recsys/
 | 3 | ANN Retrieval Service | FAISS index build, FastAPI retrieve endpoint, latency logging | Complete |
 | 4 | Cross-Encoder Reranker | sentence-transformers reranker, FastAPI rerank endpoint | Complete |
 | 5 | Real-Time Feedback Stream | Kafka native install, feedback endpoint, consumer service | Complete |
-| 6 | Online Learning Loop | Incremental SGD updates, embedding snapshot versioning | Pending |
+| 6 | Online Learning Loop | Incremental SGD updates, embedding snapshot versioning | Complete |
 | 7 | Dashboard | Next.js dashboard: latency, score distribution, embedding evolution | Pending |
 | 8 | Integration & End-to-End Test | Full pipeline test, load testing, final docs and polish | Pending |
 
