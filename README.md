@@ -67,7 +67,7 @@ two-tower-recsys/
 | 5 | Real-Time Feedback Stream | Kafka native install, feedback endpoint, consumer service | Complete |
 | 6 | Online Learning Loop | Incremental SGD updates, embedding snapshot versioning | Complete |
 | 7 | Dashboard | Next.js dashboard: latency, score distribution, embedding evolution | Complete |
-| 8 | Integration & End-to-End Test | Full pipeline test, load testing, final docs and polish | Pending |
+| 8 | Integration & End-to-End Test | Full pipeline test, load testing, final docs and polish | Complete |
 
 
 thats all!!
