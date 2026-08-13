@@ -71,3 +71,4 @@ two-tower-recsys/
 
 
 thats all!!
+LinkedIn not updated
