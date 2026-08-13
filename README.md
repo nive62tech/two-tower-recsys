@@ -72,3 +72,4 @@ two-tower-recsys/
 
 thats all!!
 LinkedIn not updated
+README complete
