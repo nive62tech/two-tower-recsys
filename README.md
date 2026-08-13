@@ -66,7 +66,7 @@ two-tower-recsys/
 | 4 | Cross-Encoder Reranker | sentence-transformers reranker, FastAPI rerank endpoint | Complete |
 | 5 | Real-Time Feedback Stream | Kafka native install, feedback endpoint, consumer service | Complete |
 | 6 | Online Learning Loop | Incremental SGD updates, embedding snapshot versioning | Complete |
-| 7 | Dashboard | Next.js dashboard: latency, score distribution, embedding evolution | Pending |
+| 7 | Dashboard | Next.js dashboard: latency, score distribution, embedding evolution | Complete |
 | 8 | Integration & End-to-End Test | Full pipeline test, load testing, final docs and polish | Pending |
 
 
